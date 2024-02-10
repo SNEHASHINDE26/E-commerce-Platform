@@ -34,12 +34,21 @@ Designed a responsive and user-friendly interface using Bootstrap.
 
 ### Project Files:
 signup.html, login.html : User registration and login interfaces.
+
 signup.php, login.php : Server-side scripts for user authentication and registration.
+
 home.php (vendor and customer) : Dashboard for vendors and customers with distinct features.
+
 upload.php : Handles the uploading of products by vendors.
+
 view.php : Displays the products uploaded by vendors.
+
 addcart.php, viewcart.php : Manages shopping cart functionality for customers.
+
 place_order.php : Allows customers to place orders and calculates the total amount.
+
 removecart.php : Removes items from the shopping cart.
+
 authguard.php : Implements role-based access control for vendor and customer functionalities.
+
 connection.php : Manages database connection.
