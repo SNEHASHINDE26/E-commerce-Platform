@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+          
+       <div class="d-flex justify-content-center align-items-center vh-100">
+
+           <form action="signup.php" method="post" class="w-25 bg-warning p-3" onsubmit="return validate()">
+
+            <h3 class="text-center">Signup Here..</h3>
+            
+            <input type="text" name="username" placeholder="Username" class="form-control mt-2" required>
+            <input type="password" name="pass1" placeholder="Password" class="form-control mt-2" required id="pass1">
+            <input type="password" name="pass2" placeholder="Retype Password" class="form-control mt-2" required id="pass2">
+
+            <select name="usertype" class="form-control mt-2" required>
+                <option value="Customer">Customer</option>
+                <option value="vendor">Vendor</option>
+            </select>
+
+            <button class="mt-3 form-control btn btn-success">Signup</button>
+           
+            <div class="text-end">
+                <a class="text-dark" href="login.html">Login Here..</a>
+           </div>
+
+        </form>
+      
+      </div>
+
+
+
+<script>
+         function validate(){
+            pass1obj=document.getElementById("pass1")
+            pass2obj=document.getElementById("pass2")
+
+            if(pass1obj.value==pass2obj.value){
+                return true
+            }else{
+                alert("Password Mismatch");
+                return false;
+            }
+
+         }
+
+</script>
+
+
+</body>
+</html>
